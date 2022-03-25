@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [    
-    "gatsby-plugin-manifest",
     {
     resolve: `gatsby-plugin-manifest`,
     options: {
@@ -21,12 +20,6 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
