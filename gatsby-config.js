@@ -16,7 +16,7 @@ module.exports = {
       icon: `src/images/Dad jokes icon.png`
     },
   },
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
