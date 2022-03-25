@@ -25,11 +25,13 @@
 .center h4 {
     margin-top: 2%;
     width: 90%;
+    text-align: center;
 }
 
 .center p {
     margin-top: 2%;
     font-size: .8rem;
+    text-align: center
 }
 
 .footer {

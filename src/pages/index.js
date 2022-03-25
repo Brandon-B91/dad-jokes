@@ -3,7 +3,7 @@ import Layout from "../Components/Layout";
 import axios from 'axios'
 
 const IndexPage = () => {
-  const [data, getData] = useState([])
+  const [data, setData] = useState([])
 
   const options = {
     method: 'GET',
@@ -14,11 +14,11 @@ const IndexPage = () => {
     }
   };
   
-  function jokes() {
-    axios.request(options).then((res) =>  {
+    function jokes() {
+      axios.request(options).then((res) =>  {
       console.log(res.data);
-      const data = res.data
-      getData(data)
+      const data =  res.data
+      setData(data)
     }).catch((error) => {
       console.error(error);
     });
@@ -31,8 +31,8 @@ const IndexPage = () => {
           <cite>Press for the best dad jokes around!</cite>
           <button onClick={jokes}> Get Jokes</button>
 
-          <h4>{data.body[0].setup}</h4>
-          <p>{data.body[0].punchline}</p>
+          <h4>{data?.body?.[0]?.setup}</h4>
+          <p>{data?.body?.[0].punchline}</p>
         </div>
       </main>
     </Layout>
