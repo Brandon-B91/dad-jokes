@@ -4,6 +4,7 @@ import axios from "axios";
 
 const IndexPage = () => {
   const [data, setData] = useState([]);
+  const [isActive, setActive] = useState(false)
 
   const options = {
     method: "GET",
@@ -27,14 +28,18 @@ const IndexPage = () => {
       });
   }
 
+  const handleToggle = () => [
+    setActive(!isActive)
+  ]
+
 
   return (
     <Layout>
       <main className="full-page">
         <div className="center">
           <cite>Press for the best dad jokes around!</cite>
-          <button onClick={jokes}> Get Jokes</button>
-          <div className="card">
+          <button onClick={() => {jokes(); handleToggle()}}> Get Jokes</button>
+          <div className={isActive ? 'card' : null}>
             <h4>{data?.body?.[0]?.setup}</h4>
             <p>{data?.body?.[0].punchline}</p>
           </div>
