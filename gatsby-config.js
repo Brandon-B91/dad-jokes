@@ -10,8 +10,8 @@ module.exports = {
       name: `Dad Jokes`,
       short_name: `Dad Jokes`,
       start_url: `/`,
-      background_color: `#f7f0eb`,
-      theme_color: `#a2466c`,
+      background_color: `#000`,
+      theme_color: `#000`,
       display: `standalone`,
       icon: `src/images/Dad jokes icon.png`
     },
