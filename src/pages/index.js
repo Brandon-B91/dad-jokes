@@ -29,10 +29,8 @@ const IndexPage = () => {
   }
 
   const handleClick = () => [
-    setActive(!isActive)
+    setActive(true) 
   ]
-
-
 
   return (
     <Layout>
@@ -40,8 +38,8 @@ const IndexPage = () => {
         <div className="center">
           <cite>Press for the best dad jokes around!</cite>
           <button onClick={() => {jokes(); handleClick()}}> Get Jokes</button>
-          <div className={isActive ? 'card' : 'card'}>
-            <h4>{data?.body?.[0]?.setup}</h4>
+          <div className={isActive ? 'card' : ''}>
+            <h4>{data?.body?.[0].setup}</h4>
             <p>{data?.body?.[0].punchline}</p>
           </div>
         </div>
