@@ -27,6 +27,7 @@ const IndexPage = () => {
       });
   }
 
+
   return (
     <Layout>
       <main className="full-page">
