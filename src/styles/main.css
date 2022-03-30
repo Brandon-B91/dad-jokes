@@ -23,6 +23,7 @@
     height: 50px;
     background: linear-gradient(to right, red,orange,yellow);
     font-size: 1.1rem;
+    color: black;
 }
 
 .center button:hover {
@@ -57,13 +58,19 @@
 .footer {
     background: linear-gradient(to right, red, orange, yellow);
     text-align: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
 @media only screen and (max-width: 500px) {
     .card {
         width: 80%;
+    }
+
+    .footer {
+        background: linear-gradient(to right, red, orange, yellow);
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
